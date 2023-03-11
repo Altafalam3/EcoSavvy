@@ -16,6 +16,7 @@ const images = [ImageOne, ImageTwo, ImageThree];
 const HomePage = () => {
 
   
+  
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -25,6 +26,23 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, [currentImage]);
 
+
+
+  const [text, setText] = useState('');
+  const fullText = "WELCOME TO ECOSAVVY";
+
+  useEffect(() => {
+    let i = 0;
+    const timer = setInterval(() => {
+      if (i === fullText.length) {
+        clearInterval(timer);
+      } else {
+        setText(fullText.slice(0, i + 1));
+        i++;
+      }
+    }, 100);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div>
@@ -39,9 +57,10 @@ const HomePage = () => {
     }`}
     style={{ paddingBottom: "6.5%", paddingRight:'13px' }}
   >
-    <h1 className=" text-7xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-700   -translate-y-1/2 z-10  ">
-      WELCOME<span className="text-yellow-300"> HOME</span>
+    <h1 className=" text-6xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-600 underline    -translate-y-1/2 z-10  ">{text}
+      {/* <span>W</span>ELCOME<span className="text-yellow-300"> HOME</span> */}
     </h1>
+
     <img
       src={image}
       alt={`Image ${index}`}

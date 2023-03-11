@@ -10,9 +10,9 @@ const Footer = () => {
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg> */}
         <img className='h-10' src={Leaf}/>
-        <span class="ml-3 text-xl">Tailblocks</span>
+        <span class="ml-3 text-xl">EcoSavvy</span>
       </a>
-      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <p class="mt-2 text-sm text-gray-500">We send waste at its correct place!</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -33,53 +33,53 @@ const Footer = () => {
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About Us</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Why choose us</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Disclaimer</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Terms and conditions</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Sitemap</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a class="text-gray-600 hover:text-gray-800">News</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Knowledge Centre</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Gallery</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Internet</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a class="text-gray-600 hover:text-gray-800">TSEC,Bandra</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Linking Road, Mumbai</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-800">0123456789</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-800">ecosavvy@gmail.com</a>
           </li>
         </nav>
       </div>
@@ -87,13 +87,13 @@ const Footer = () => {
   </div>
   <div class="bg-gray-100">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 EcoSavvy —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Debuggers</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            <path d="M18 2h-3a5 5  0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
         <a class="ml-3 text-gray-500">

@@ -4,6 +4,7 @@ import Loader from "react-loader-spinner";
 import useInterval from "@use-it/interval";
 import axios from "axios";
 import WasteType from "./WasteType";
+
 import Chart from "./Chart";
 import { FaUpload } from "react-icons/fa";
 
@@ -13,6 +14,7 @@ import "./wastevideo.css";
 let classifier;
 // image upload wala
 function WasteVideo() {
+
   const inputRef = useRef();
   const [imageData, setImageData] = useState('');
   const [start, setStart] = useState(false);
@@ -134,6 +136,7 @@ function WasteVideo() {
       {result.length > 0 && (
         <div className="results">
           <WasteType data={result} />
+         
         </div>
       )}
     </div>

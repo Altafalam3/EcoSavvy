@@ -2,26 +2,26 @@ import React from "react";
 
 const WasteType = (props) => {
   const mostMatched = props.data[0];
-  const allLabels = props.data.map((elem) => elem.label);
-  const sortedLabels = allLabels.sort((a, b) => a.localeCompare(b));
+  const allLabels = props.data;
+  // const sortedLabels = allLabels.map((elem) => elem.label).sort((a, b) => a.localeCompare(b));
   return (
     <>
-      <ul className="wastetype">
-        {sortedLabels.map((label) => (
-          <li key={label}>
+      <ul className="wastetype waste-elem">
+        {allLabels.map((props) => (
+          <li key={props.index}>
             <span>
               <img
                 className={`img ${
-                  label === mostMatched.label ? "selected" : null
+                  props.label === mostMatched.label ? "selected" : null
                 }`}
                 src={
-                  label === "No Dolls"
+                  props.label === "No Dolls"
                     ? "./images/No.jpg"
-                    : `./images/${label}.jpg`
+                    : `./images/${props.label}.jpg`
                 }
-                alt={label}
+                alt={props.label}
               />
-              <p className="name">{label}<br/></p>
+              <p className="name">{props.label}<br/>{((props.confidence)*100).toFixed(3)}</p>
             </span>
           </li>
         ))}

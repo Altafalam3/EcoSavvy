@@ -1,3 +1,7 @@
+.wastevideo{
+  background: gray;
+}
+
 .wastetype {
   margin: 5px;
   background-color: #021626;
@@ -15,6 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  
 }
 
 .capture video {
@@ -28,13 +33,14 @@
   border: 1px solid pink;
   border-radius: 4px;
   color: #FFF;
-  font-weight: 900;
+  /* font-weight: 900; */
   cursor: pointer;
   outline: none;
+  background-color: #16a34a;
 }
 
 .capture button:hover {
-  background-color: #ca0fcaa6;
+  background-color: #2bc463;
 }
 
 .results {

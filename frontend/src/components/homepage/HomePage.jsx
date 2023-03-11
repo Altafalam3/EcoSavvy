@@ -7,6 +7,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { useEffect } from "react";
 import './homepage.css'
+import {Link} from 'react-router-dom'
 import ImageOne from './photos/Bg11.jpg';
 import ImageTwo from './photos/li-hao-b25tsR8dBh0-unsplash.jpg';
 import ImageThree from './photos/jas-min-CIItgnBEOgw-unsplash.jpg';
@@ -38,7 +39,7 @@ const HomePage = () => {
     }`}
     style={{ paddingBottom: "6.5%", paddingRight:'13px' }}
   >
-    <h1 className=" text-7xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-yellow-700   -translate-y-1/2 z-10  ">
+    <h1 className=" text-7xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-700   -translate-y-1/2 z-10  ">
       WELCOME<span className="text-yellow-300"> HOME</span>
     </h1>
     <img
@@ -63,7 +64,7 @@ const HomePage = () => {
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              AI-based Garbage Segregation
+              ML-based Garbage Segregation
             </h1>
             <p className="mb-8 leading-relaxed">
               The politics of waste in the present day is a mess. Objects
@@ -76,10 +77,10 @@ const HomePage = () => {
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
+              <Link to="/video">Web Cam</Link> 
               </button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
+                <Link to="/image">Image Upload</Link>
               </button>
             </div>
           </div>
@@ -112,14 +113,14 @@ const HomePage = () => {
               the average consumer, while simultaneously creating a difference
               in the recycling industry and the world.
             </p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Button
               </button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 Button
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

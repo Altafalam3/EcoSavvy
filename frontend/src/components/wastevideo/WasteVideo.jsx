@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import ml5 from "ml5";
-import Loader from 'react-loader-spinner';
-import useInterval from '@use-it/interval';
-import axios from 'axios';
-import WasteType from './WasteType';
-import Chart from './Chart';
+import Loader from "react-loader-spinner";
+import useInterval from "@use-it/interval";
+import axios from "axios";
+import WasteType from "./WasteType";
+import Chart from "./Chart";
+import { FaUpload } from "react-icons/fa";
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./wastevideo.css";
@@ -14,7 +15,7 @@ let classifier;
 function WasteVideo() {
   const inputRef = useRef();
   const [start, setStart] = useState(false);
-  const [result, setResult] = useState([]);
+  const [result, setResult] = useState([]); 
   const [loaded, setLoaded] = useState(false);
   const [stopped, setStopped] = useState(false);
 
@@ -32,7 +33,7 @@ function WasteVideo() {
           return;
         }
         setResult(results);
-        console.log(results)
+        console.log(results);
         if (stopped) {
           sendResultsToBackend(results);
         }
@@ -43,25 +44,26 @@ function WasteVideo() {
   const toggle = () => {
     setStart(!start);
     setResult([]);
-    setStopped(!stopped)
-  }
+    setStopped(!stopped);
+  };
 
   const sendResultsToBackend = (results) => {
-    const data = results.map(result => {
+    const data = results.map((result) => {
       const wasteType = result.label;
       const accuracy = result.confidence;
       return { wasteType, accuracy };
     });
-    axios.post('/api/results', data)
-      .then(response => {
+    axios
+      .post("/api/results", data)
+      .then((response) => {
         console.log(response);
         setStopped(false);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
         setStopped(false);
       });
-  }
+  };
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -73,7 +75,7 @@ function WasteVideo() {
         img.src = reader.result;
         img.onload = () => {
           inputRef.current = img;
-        }
+        };
       };
     }
   };
@@ -86,22 +88,42 @@ function WasteVideo() {
         height={200}
         width={200}
         visible={!loaded}
-        style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}
+        style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
       />
       <div className="upper">
-        <div className="capture">
-          <input type="file" onChange={handleImageUpload} />
+        <div className="capture m-20">
+          <label
+            htmlFor="file-upload"
+            className="relative cursor-pointer flex justify-center items-center rounded-lg border-dashed border-gray-300 border-2 py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-200 hover:border-gray-400"
+          >
+            <div className="flex flex-col items-center space-y-1">
+              <FaUpload className="text-gray-400" size={30} />
+              <span className="text-gray-400 font-medium">Upload an image</span>
+              <h2>{inputRef.current ? "File uploaded" : ""}</h2>
+            </div>
+            <input
+              id="file-upload"
+              type="file"
+              onChange={handleImageUpload}
+              className="hidden"
+            />
+          </label>
+
           {loaded && (
-            <button onClick={() => toggle()}>
+            <button className="text-xl mt-5" onClick={() => toggle()}>
               {start ? "Stop" : "Start"}
             </button>
           )}
         </div>
-        {result.length > 0 && (
-          <div>
-            <Chart data={result[0]} />
-          </div>
-        )}
+        {/* hell */}
+        <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+          {result.length > 0 && (
+            <div>
+              <Chart data={result[0]} />
+            </div>
+          )}
+        </div>
+        {/* heello */}
       </div>
       {result.length > 0 && (
         <div className="results">

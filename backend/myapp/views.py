@@ -33,7 +33,7 @@ def results_api_view(request):
         serializer = ResultSerializer(data=request.data, many=True)
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response({'status': 'success'})
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 # class ResultsListCreate(generics.ListCreateAPIView):

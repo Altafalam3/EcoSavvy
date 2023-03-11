@@ -36,7 +36,7 @@ function WasteVideo() {
         setResult(results);
         console.log(results);
         if (stopped) {
-          sendResultsToBackend(results);
+          sendResultsToBackend(result);
         }
       });
     }
@@ -48,14 +48,14 @@ function WasteVideo() {
     setStopped(!stopped);
   };
 
-  const sendResultsToBackend = (results) => {
-    const data = results.map((result) => {
+  const sendResultsToBackend = async(result) => {
+    const data = result.map((result) => {
       const wasteType = result.label;
       const accuracy = result.confidence;
       return { wasteType, accuracy };
     });
-    axios
-      .post("/api/results", data)
+    await axios
+      .post("http://localhost:8000/api/results/", data)
       .then((response) => {
         console.log(response);
         setStopped(false);

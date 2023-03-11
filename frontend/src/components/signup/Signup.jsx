@@ -92,6 +92,10 @@ const Signup = () => {
                >
                   Sign in
                </Link>
+               <Link
+                  to="/">
+                  Homepage
+               </Link>
             </p>
          </div>
       </div>

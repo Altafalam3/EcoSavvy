@@ -15,7 +15,7 @@ class User(models.Model):
 #     def __str__(self):
 #         return f"{self.wasteType} ({self.accuracy})"
 
-class Waste(models.Model):
+class Result(models.Model):
     waste_type = models.CharField(max_length=100)
     accuracy = models.FloatField()
 

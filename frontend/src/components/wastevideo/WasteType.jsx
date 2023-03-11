@@ -21,7 +21,7 @@ const WasteType = (props) => {
                 }
                 alt={label}
               />
-              <p className="name">{label}<br/>{console.log(allLabels)}</p>
+              <p className="name">{label}<br/></p>
             </span>
           </li>
         ))}

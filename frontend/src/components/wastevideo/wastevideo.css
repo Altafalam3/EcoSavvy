@@ -80,3 +80,9 @@
   padding: 0;
   text-align: center;
 }
+
+.waste-elem{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3rem;
+}

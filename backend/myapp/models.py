@@ -15,9 +15,7 @@ class User(models.Model):
 #     def __str__(self):
 #         return f"{self.wasteType} ({self.accuracy})"
 
-class Result(models.Model):
-    waste_type = models.CharField(max_length=100)
-    accuracy = models.FloatField()
-
-    def __str__(self):
-        return f"{self.waste_type} ({self.accuracy}%)"
+class Prediction(models.Model):
+    text = models.CharField(max_length=200)
+    prediction = models.CharField(max_length=20)
+    created_at = models.DateTimeField(auto_now_add=True)

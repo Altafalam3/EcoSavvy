@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import User
-from .models import Result
+from .models import Prediction
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
 #         model = Result
 #         fields = '__all__'
 
-class ResultSerializer(serializers.ModelSerializer):
+class PredictionSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Result
-        fields = ['id', 'wasteType', 'accuracy']
+        model = Prediction
+        fields = ['id', 'prediction', 'created_at']

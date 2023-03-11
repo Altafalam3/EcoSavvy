@@ -1,0 +1,76 @@
+.wastetype {
+  margin: 5px;
+  background-color: #021626;
+  color: #FFFFFF;
+}
+
+.upper {
+  display: flex;
+  justify-content: center;
+}
+
+.capture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.capture video {
+  margin-bottom: 10px;
+}
+
+.capture button {
+  width: 150px;
+  height: 41px;
+  background-color: #e407afc2;
+  border: 1px solid pink;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: 900;
+  cursor: pointer;
+  outline: none;
+}
+
+.capture button:hover {
+  background-color: #ca0fcaa6;
+}
+
+.results {
+  margin-top: 40px;
+}
+.results .selected {
+  border: 2px solid gold;
+  animation: moveIt 5s infinite;
+}
+
+@keyframes moveIt {
+  25% {border: 4px solid rgb(240, 202, 36);}
+  50% {border: 4px solid rgb(211, 177, 24);}
+  100% {border: 4px solid rgb(179, 150, 24);}
+}
+
+.results .wastetype {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.results .wastetype li {
+  padding: 15px 0px 0px 15px;
+}
+
+.results .wastetype .img {
+  border-radius: 50%;
+  width: 100px;
+  height: 90px;
+  padding: 5px;
+}
+
+.results .wastetype .name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

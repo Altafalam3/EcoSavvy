@@ -14,8 +14,9 @@ let classifier;
 // image upload wala
 function WasteVideo() {
   const inputRef = useRef();
+  const [imageData, setImageData] = useState('');
   const [start, setStart] = useState(false);
-  const [result, setResult] = useState([]); 
+  const [result, setResult] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [stopped, setStopped] = useState(false);
 
@@ -72,6 +73,7 @@ function WasteVideo() {
       reader.readAsDataURL(file);
       reader.onloadend = () => {
         const img = new Image();
+        setImageData(reader.result);
         img.src = reader.result;
         img.onload = () => {
           inputRef.current = img;
@@ -92,7 +94,7 @@ function WasteVideo() {
       />
       <div className="upper">
         <div className="capture m-20">
-          <label
+          {!imageData && <label
             htmlFor="file-upload"
             className="relative cursor-pointer flex justify-center items-center rounded-lg border-dashed border-gray-300 border-2 py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-200 hover:border-gray-400"
           >
@@ -108,6 +110,10 @@ function WasteVideo() {
               className="hidden"
             />
           </label>
+          }
+          {
+          imageData && <><h2>Image Uploaded</h2><br/><img src={imageData} alt="Uploaded Pic" /></>
+          }
 
           {loaded && (
             <button className="text-xl mt-5" onClick={() => toggle()}>

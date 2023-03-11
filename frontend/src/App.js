@@ -9,18 +9,16 @@ import Login from './components/login/Login';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
 
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-
         </Routes>
       </BrowserRouter>
-
-      <Footer />
+      <Footer/>
     </div>
   );
 }

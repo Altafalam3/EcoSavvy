@@ -48,23 +48,22 @@ function WasteVideo() {
     setStopped(!stopped);
   };
 
-  const sendResultsToBackend = async(result) => {
-    const data = result.map((result) => {
-      const wasteType = result.label;
-      const accuracy = result.confidence;
+  const sendResultsToBackend = (results) => {
+    const data = results.map((result) => {
+      const wasteType = results.label;
+      const accuracy = results.confidence;
       return { wasteType, accuracy };
     });
-    await axios
-      .post("http://localhost:8000/api/results/", data)
+    axios
+      .post("http://localhost:8000/api/prediction/", { predictions: data })
       .then((response) => {
         console.log(response);
-        setStopped(false);
       })
       .catch((error) => {
         console.error(error);
-        setStopped(false);
       });
   };
+
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];

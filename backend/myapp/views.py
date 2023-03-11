@@ -3,8 +3,9 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import User
 from .serializers import UserSerializer
-from .models import Result
-from .serializers import ResultSerializer
+from rest_framework.views import APIView
+from .serializers import PredictionSerializer
+from .models import Prediction
 
 @api_view(['POST'])
 def user_signup(request):
@@ -26,15 +27,14 @@ def user_login(request):
     serializer = UserSerializer(user)
     return Response(serializer.data)
 
-
-@api_view(['POST'])
-def results_api_view(request):
-    if request.method == 'POST':
-        serializer = ResultSerializer(data=request.data, many=True)
+class PredictionView(APIView):
+    def post(self, request):
+        serializer = PredictionSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response({'status': 'success'})
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 # class ResultsListCreate(generics.ListCreateAPIView):
 #     queryset = Result.objects.all()

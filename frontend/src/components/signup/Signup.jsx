@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import './signup.css'
 import axios from "axios";
 
+
 const Signup = () => {
    const [name, setName] = useState("");
    const [email, setEmail] = useState("");
@@ -43,7 +44,7 @@ const Signup = () => {
                      id="name"
                      value={name}
                      onChange={(event) => setName(event.target.value)}
-                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" required
                   />
                </div>
                <div className="mb-2">
@@ -58,7 +59,7 @@ const Signup = () => {
                      id="email"
                      value={email}
                      onChange={(event) => setEmail(event.target.value)}
-                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"  required
                   />
                </div>
                <div className="mb-2">
@@ -73,12 +74,12 @@ const Signup = () => {
                      id="password"
                      value={password}
                      onChange={(event) => setPassword(event.target.value)}
-                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" required
                   />
                </div>
                <div className="mt-6">
                   <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 text-xl">
-                     Login
+                    <Link to="/home">Login</Link> 
                   </button>
                </div>
             </form>

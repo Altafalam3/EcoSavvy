@@ -47,7 +47,7 @@ const HomePage = () => {
   return (
     <div>
 
-<div className="relative h-screen w-screen">
+<div className="relative h-screen w-screen" >
      
       {images.map((image, index) => (
   <div
@@ -57,7 +57,7 @@ const HomePage = () => {
     }`}
     style={{ paddingBottom: "6.5%", paddingRight:'13px' }}
   >
-    <h1 className=" text-6xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-600 underline    -translate-y-1/2 z-10  ">{text}
+    <h1 className="italic text-6xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 text-green-500  underline    -translate-y-1/2 z-10  ">{text}
       {/* <span>W</span>ELCOME<span className="text-yellow-300"> HOME</span> */}
     </h1>
 
@@ -74,14 +74,14 @@ const HomePage = () => {
       <video className="" src={video1} autoPlay={true} onError={(e) => console.log(e)} />
       </div> */}
     
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font scroll-smooth" id="shawn">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img
             className=" lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
             src={dustbin}
           />
-          <div className="text-center lg:w-2/3 w-full">
+          <div className="text-center lg:w-2/3 w-full" >
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               ML-based Garbage Segregation
             </h1>
@@ -95,7 +95,7 @@ const HomePage = () => {
               something is and whether it should be recycled or not.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               <Link to="/video">Web Cam</Link> 
               </button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
@@ -120,17 +120,8 @@ const HomePage = () => {
               Why waste?
             </h1>
             <p className="mb-8 leading-relaxed">
-              In an industry plagued with ongoing diplomatic issues, the
-              recycling industry struggles to properly identify certain products
-              as recyclable. Moreover, the average consumer should identify the
-              difference between recyclable and non-recyclable goods. The
-              recycling industry is already strained with economic downturns and
-              diplomatic, and we as citizens should do our part in helping those
-              in this industry. Our product is designed to identify goods by the
-              aforementioned categories and narrow down the goods, based on
-              their overall reusability. All in all, it is designed to appeal to
-              the average consumer, while simultaneously creating a difference
-              in the recycling industry and the world.
+            Our app can help you identify recyclable items and properly dispose of them, reducing waste and saving money. By doing so, you can make a positive impact on the environment and support the recycling industry, which is facing economic and diplomatic challenges.
+            Our app can help address this challenge by providing users with a simple and intuitive way to identify recyclable items and learn how to dispose of them properly. This can have a significant positive impact on the environment by reducing waste and conserving resources, as well as supporting the recycling industry, which is facing economic and diplomatic challenges.
             </p>
             {/* <div className="flex justify-center">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">

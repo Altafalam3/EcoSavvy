@@ -51,7 +51,7 @@ const Login = () => {
                      type="email"
                      value={email}
                      onChange={handleEmailChange}
-                     className="block w-full px-4 py-2 mt-2 text-green-600 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                     className="block w-full px-4 py-2 mt-2 text-green-600 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" required
                   />
                </div>
                <div className="mb-2">
@@ -65,7 +65,7 @@ const Login = () => {
                      type="password"
                      value={password}
                      onChange={handlePasswordChange}
-                     className="block w-full px-4 py-2 mt-2 text-green-600 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                     className="block w-full px-4 py-2 mt-2 text-green-600 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" required
                   />
                </div>
                <Link to='/login' className="text-xl text-purple-600 hover:underline">
@@ -77,7 +77,7 @@ const Login = () => {
                      onClick={handleSubmit}
                      className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 text-xl transform bg-green-500 rounded-md hover:bg-green-400 focus:outline-none focus:bg-green-600"
                   >
-                     Login
+                     <Link to="/home">Login</Link>
                   </button>
                </div>
             </form>

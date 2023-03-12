@@ -26,6 +26,186 @@ const WasteType = (props) => {
           </li>
         ))}
       </ul>
+      {mostMatched.label==='plastic' && 
+    <div className="mt-4 text-2xl m-10 border-2 border-gray-300 p-5">
+        <h1 className="text-4xl text-center font-semibold">Non-biodegradable</h1>
+        <p className="list-disc list-inside">
+            <li>Reduce single-use plastics: Single-use plastics, such as straws, water bottles, and plastic bags, contribute to a significant amount of plastic waste. Reducing or eliminating their use is an effective way to reduce plastic waste.</li>
+            <li>Use reusable items: Using reusable items, such as water bottles, coffee cups, and shopping bags, can significantly reduce plastic waste.</li>
+            <li>Choose products with less packaging: Choose products with minimal packaging or packaging made from sustainable materials like paper, glass, or metal.</li>
+            <li>Recycle properly: Properly recycling plastic is important to keep it out of landfills and the environment. Check local recycling guidelines to determine which types of plastic can be recycled in your area.</li>
+            <li>Support legislation: Supporting legislation and policies that reduce plastic waste, such as plastic bag bans or restrictions on single-use plastics, can have a significant impact.</li>
+            <li>Opt for eco-friendly alternatives: Opt for eco-friendly alternatives to plastic products, such as bamboo toothbrushes, metal straws, and cloth shopping bags.</li>
+        </p>
+        <p>By implementing these tips, we can reduce plastic waste, conserve natural resources, and promote a more sustainable future.</p>
+    </div>
+}
+{mostMatched.label==='clothes' && 
+    <div className="mt-4 text-2xl m-10 border-2 border-gray-300 p-5">
+        <p>Reducing clothing waste is important for both environmental and social reasons, and there are several ways to do so. Here are five tips to reduce clothing waste:</p>
+        <p className="list-disc list-inside">
+            <li>Buy secondhand or vintage clothing: Purchasing secondhand clothing can help reduce demand for new clothing, which in turn reduces the amount of clothing waste generated.</li>
+            <li>Repair and mend clothes: Instead of throwing out clothes with minor tears or damage, consider repairing them. This not only reduces waste but also extends the life of your clothing.</li>
+            <li>Donate or sell unwanted clothes: Instead of throwing away clothes that no longer fit or that you no longer wear, donate them to a local charity or sell them to a secondhand store.</li>
+            <li>Choose quality over quantity: Invest in high-quality clothing that will last longer, instead of buying cheap, disposable clothing that will quickly wear out.</li>
+            <li>Practice sustainable laundry habits: Use cold water when washing clothes, air-dry clothes instead of using a dryer, and avoid using harsh chemicals or detergents that can damage clothing and reduce its lifespan.</li>
+        </p>
+        <p>By following these tips, we can reduce the amount of clothing waste generated and promote a more sustainable and responsible approach to fashion.</p>
+    </div>
+}
+
+<div style={{border: "1px solid black", padding: "10px"}}>
+  <h2>Non-biodegradable</h2>
+  <p>Reducing glass waste is an important aspect of waste reduction and environmental sustainability. Here are some key points to consider:</p>
+  <ul>
+    <li><p>Reuse: Glass containers, such as bottles and jars, can be reused for storage or repurposed for crafts or decorations.</p></li>
+    <li><p>Recycling: Glass is infinitely recyclable, so recycling glass products is an effective way to reduce glass waste.</p></li>
+    <li><p>Buy products with minimal packaging: Choose products with minimal packaging or packaging made from sustainable materials like paper, glass, or metal.</p></li>
+    <li><p>Support recycling programs: Support recycling programs in your community, and make sure to recycle glass products properly.</p></li>
+    <li><p>Donate: Donate unwanted glass products, such as dishes or vases, to local charities or thrift stores.</p></li>
+    <li><p>Buy products made from recycled glass: Buying products made from recycled glass helps to support the recycling industry and reduce the need for virgin glass production.</p></li>
+  </ul>
+  <p>By implementing these tips, we can reduce the amount of glass waste we generate and promote a more sustainable future.</p>
+</div>
+
+      {
+  mostMatched.label==='e-waste' && 
+  <div style={{border: '1px solid black', padding: '10px'}}>
+    <h2>Non-biodegradable</h2>
+    <p>Electronic waste, or e-waste, is a growing problem worldwide. To reduce and control e-waste, here are some ways:</p>
+
+    <ul>
+      <li>Buy electronics with longevity in mind: Consider investing in durable and long-lasting electronics, rather than opting for cheaper, disposable models that will need to be replaced frequently.</li>
+      <li>Donate or sell old electronics: If you have electronics that are still in good condition but that you no longer need, consider donating or selling them to someone else who can use them.</li>
+      <li>Recycle e-waste: Recycling e-waste is essential to prevent toxic chemicals from harming the environment. Look for certified e-waste recyclers who will dispose of electronics in an environmentally responsible manner.</li>
+      <li>Buy refurbished electronics: Purchasing refurbished electronics is a sustainable option, as it reduces the demand for new electronics and extends the lifespan of existing ones.</li>
+      <li>Properly dispose of batteries: Batteries contain toxic chemicals and should be disposed of properly. Look for designated battery recycling locations or participate in battery recycling programs.</li>
+      <li>Use cloud storage: Storing data on the cloud reduces the need for physical storage devices like hard drives, which can become obsolete and contribute to e-waste.</li>
+    </ul>
+
+    <p>By following these tips, we can help reduce the amount of e-waste generated and promote more sustainable practices when it comes to electronics.</p>
+  </div>
+}
+{
+  mostMatched.label==='metal' && 
+  <div style={{border: '1px solid black', padding: '10px'}}>
+    <h2>Non-biodegradable</h2>
+    <p style={{textIndent: '30px'}}>Metal recycling is an important process for reducing waste, conserving natural resources, and promoting sustainability. Here are some key points to consider:</p>
+
+    <ul>
+      <li><p>Metals are valuable resources that can be recycled indefinitely without losing their properties or quality.</p></li>
+      <li><p>Recycling metal reduces the need for mining and extraction, which can be environmentally damaging and resource-intensive.</p></li>
+      <li><p>Commonly recycled metals include steel, aluminum, copper, and brass, which are used in a variety of products, from cars and appliances to building materials and packaging.</p></li>
+      <li><p>The metal recycling process involves collection, sorting, cleaning, and melting down the metal to create new products.</p></li>
+      <li><p>Recycling metal requires less energy and resources than extracting and refining new metal, which results in significant energy and cost savings.</p></li>
+      <li><p>Metal recycling also helps reduce greenhouse gas emissions, as the process produces fewer emissions than the production of new metal.</p></li>
+    </ul>
+
+    <p style={{textIndent: '30px'}}>By recycling metal, we can reduce waste, conserve natural resources, and promote a more sustainable future.</p>
+  </div>
+}
+{
+  mostMatched.label === 'paper' &&
+  <div style={{border: '1px solid black', padding: '10px'}}>
+    <h2>Reducing Paper Waste</h2>
+    <ul>
+      <li>Use digital communication methods like email, online messaging, and video conferencing</li>
+      <li>Print on both sides of the paper to cut usage in half</li>
+      <li>Print only what is necessary and essential</li>
+      <li>Use recycled paper to reduce the need for virgin pulp</li>
+      <li>Go paperless by switching to digital billing, e-statements, and online payment systems</li>
+      <li>Reuse paper that has only been printed on one side as scrap paper or for draft printing</li>
+    </ul>
+    <p>By implementing these tips, we can reduce the amount of paper we use and promote a more sustainable future.</p>
+  </div>
+}
+{
+    mostMatched.label==='glass' && (
+      <div style={{border: "1px solid black", padding: "10px"}}>
+    <h2>Glass Waste Reduction</h2>
+    <p>Reducing glass waste is an important aspect of waste reduction and environmental sustainability. Here are some key points to consider:</p>
+    <ul>
+        <li>Reuse: Glass containers, such as bottles and jars, can be reused for storage or repurposed for crafts or decorations.</li>
+        <li>Recycling: Glass is infinitely recyclable, so recycling glass products is an effective way to reduce glass waste.</li>
+        <li>Buy products with minimal packaging: Choose products with minimal packaging or packaging made from sustainable materials like paper, glass, or metal.</li>
+        <li>Support recycling programs: Support recycling programs in your community, and make sure to recycle glass products properly.</li>
+        <li>Donate: Donate unwanted glass products, such as dishes or vases, to local charities or thrift stores.</li>
+        <li>Buy products made from recycled glass: Buying products made from recycled glass helps to support the recycling industry and reduce the need for virgin glass production.</li>
+    </ul>
+    <p>By implementing these tips, we can reduce the amount of glass waste we generate and promote a more sustainable future.</p>
+</div>)
+}
+{
+  mostMatched.label==='light bulbs' &&
+  <div style={{border: '1px solid black', padding: '10px'}}>
+    <h2>Non-biodegradable</h2>
+    <p>
+      Recycling light bulbs is an important aspect of waste reduction and environmental sustainability. Here are some key points to consider:
+      <ul>
+        <li>Compact fluorescent lamps (CFLs) and light-emitting diode (LED) bulbs contain toxic substances such as mercury and lead, which can pose a risk to the environment if not disposed of properly.</li>
+        <li>It is important to recycle these bulbs to prevent toxic substances from contaminating the environment and to recover valuable materials that can be reused.</li>
+        <li>Many cities and towns offer recycling programs for CFLs and LEDs, so it is important to check with local authorities to determine the proper way to dispose of these bulbs.</li>
+        <li>Recycling methods for light bulbs include sending them to specialized recycling centers, returning them to the manufacturer, or dropping them off at designated collection points.</li>
+        <li>It is important to handle broken light bulbs with care, as the release of mercury can pose a health risk. Broken CFLs and LEDs should be placed in a sealed container and taken to a designated collection point for safe disposal.</li>
+      </ul>
+      By properly recycling light bulbs, we can reduce waste, protect the environment, and recover valuable materials for reuse.
+    </p>
+  </div>
+}
+
+{
+  mostMatched.label === 'batteries' && (
+    <div style={{border: '1px solid black', padding: '10px'}}>
+      <h2>Reducing Plastic Waste</h2>
+      <ul>
+        <li>Reduce single-use plastics: Single-use plastics, such as straws, water bottles, and plastic bags, contribute to a significant amount of plastic waste. Reducing or eliminating their use is an effective way to reduce plastic waste.</li>
+        <li>Use reusable items: Using reusable items, such as water bottles, coffee cups, and shopping bags, can significantly reduce plastic waste.</li>
+        <li>Choose products with less packaging: Choose products with minimal packaging or packaging made from sustainable materials like paper, glass, or metal.</li>
+        <li>Recycle properly: Properly recycling plastic is important to keep it out of landfills and the environment. Check local recycling guidelines to determine which types of plastic can be recycled in your area.</li>
+        <li>Support legislation: Supporting legislation and policies that reduce plastic waste, such as plastic bag bans or restrictions on single-use plastics, can have a significant impact.</li>
+        <li>Opt for eco-friendly alternatives: Opt for eco-friendly alternatives to plastic products, such as bamboo toothbrushes, metal straws, and cloth shopping bags.</li>
+      </ul>
+      <p>By implementing these tips, we can reduce plastic waste, conserve natural resources, and promote a more sustainable future.</p>
+    </div>
+  )
+}
+
+{
+  mostMatched.label === 'radioactive' && (
+    <div style={{ border: '1px solid black', padding: '10px' }}>
+      <h2>Non-biodegradable</h2>
+      <p>
+        Reducing plastic waste is a crucial aspect of waste reduction and environmental sustainability. Here are some key points to consider:
+      </p>
+      <ul>
+        <li>Reduce single-use plastics: Single-use plastics, such as straws, water bottles, and plastic bags, contribute to a significant amount of plastic waste. Reducing or eliminating their use is an effective way to reduce plastic waste.</li>
+        <li>Use reusable items: Using reusable items, such as water bottles, coffee cups, and shopping bags, can significantly reduce plastic waste.</li>
+        <li>Choose products with less packaging: Choose products with minimal packaging or packaging made from sustainable materials like paper, glass, or metal.</li>
+        <li>Recycle properly: Properly recycling plastic is important to keep it out of landfills and the environment. Check local recycling guidelines to determine which types of plastic can be recycled in your area.</li>
+        <li>Support legislation: Supporting legislation and policies that reduce plastic waste, such as plastic bag bans or restrictions on single-use plastics, can have a significant impact.</li>
+        <li>Opt for eco-friendly alternatives: Opt for eco-friendly alternatives to plastic products, such as bamboo toothbrushes, metal straws, and cloth shopping bags.</li>
+      </ul>
+      <p>By implementing these tips, we can reduce plastic waste, conserve natural resources, and promote a more sustainable future.</p>
+    </div>
+  )
+}
+
+{
+  mostMatched.label === 'organic' && (
+    <div style={{ border: '1px solid black', padding: '10px' }}>
+      <h2>Biodegradable</h2>
+      <ul>
+        <li>Organic waste contains nutrients that can be used to improve soil health and support plant growth.</li>
+        <li>When organic waste is sent to landfill, it produces methane, a potent greenhouse gas that contributes to climate change.</li>
+        <li>Composting is a process that breaks down organic waste into nutrient-rich soil amendment that can be used to support plant growth.</li>
+        <li>Composting can be done on a small or large scale, from backyard composting to commercial-scale composting operations.</li>
+        <li>Organic waste can also be used for biogas production, a process that produces methane that can be used as a renewable energy source.</li>
+        <li>Other forms of organic waste, such as food waste, can be used for animal feed or converted into other products, such as biofuels.</li>
+      </ul>
+      <p>By managing organic waste as a valuable resource, we can reduce waste, support plant growth, and promote a more sustainable future.</p>
+    </div>
+  )
+}
     </>
   );
 };

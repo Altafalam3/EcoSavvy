@@ -2,7 +2,7 @@ import React from 'react'
 import Leaf from './leaf.png'
 const Footer = () => {
   return (
-    <footer class="text-gray-600 body-font ">
+    <footer class="text-gray-600 body-font bg-gray-200">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
     </div>
   </div>
-  <div class="bg-gray-100">
+  <div class="bg-gray-200">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 EcoSavvy —
         <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Debuggers</a>

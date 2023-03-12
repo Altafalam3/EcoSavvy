@@ -109,7 +109,7 @@ const WasteType = (props) => {
 {
   mostMatched.label==='metal' && 
   <div className="mt-4 text-2xl m-10 border-2 border-gray-300 p-5">
-  <h1 className="text-4xl text-center font-semibold">E-waste, Non Biodegradable</h1>
+  <h1 className="text-4xl text-center font-semibold">Metals, Non Biodegradable</h1>
   <p>Metal is a growing problem worldwide. To reduce and control e-waste, here are some ways:</p>
    <ul>
       <li><p>Metals are valuable resources that can be recycled indefinitely without losing their properties or quality.</p></li>

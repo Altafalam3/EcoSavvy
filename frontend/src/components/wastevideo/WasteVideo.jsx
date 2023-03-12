@@ -10,6 +10,7 @@ import { FaUpload } from "react-icons/fa";
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./wastevideo.css";
+import NewWaste from "./NewWaste";
 
 let classifier;
 // image upload wala
@@ -84,61 +85,7 @@ function WasteVideo() {
   };
 
   return (
-    // <div className="wastevideo">
-    //   <Loader
-    //     type="Watch"
-    //     color="#00BFFF"
-    //     height={200}
-    //     width={200}
-    //     visible={!loaded}
-    //     style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
-    //   />
-    //   <div className="upper">
-    //     <div className="capture m-20">
-    //       {!imageData && <label
-    //         htmlFor="file-upload"
-    //         className="relative cursor-pointer flex justify-center items-center rounded-lg border-dashed border-gray-300 border-2 py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-200 hover:border-gray-400"
-    //       >
-    //         <div className="flex flex-col items-center space-y-1">
-    //           <FaUpload className="text-gray-400" size={30} />
-    //           <span className="text-gray-400 font-medium">Upload an image</span>
-    //           <h2>{inputRef.current ? "File uploaded" : ""}</h2>
-    //         </div>
-    //         <input
-    //           id="file-upload"
-    //           type="file"
-    //           onChange={handleImageUpload}
-    //           className="hidden"
-    //         />
-    //       </label>
-    //       }
-    //       {
-    //       imageData && <><h2>Image Uploaded</h2><br/><img src={imageData} alt="Uploaded Pic" /></>
-    //       }
-
-    //       {loaded && (
-    //         <button className="text-xl mt-5" onClick={() => toggle()}>
-    //           {start ? "Stop" : "Start"}
-    //         </button>
-    //       )}
-    //     </div>
-    //     {/* hell */}
-    //     <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-    //       {result.length > 0 && (
-    //         <div>
-    //           <Chart data={result[0]} />
-    //         </div>
-    //       )}
-    //     </div>
-    //     {/* heello */}
-    //   </div>
-    //   {result.length > 0 && (
-    //     <div className="results">
-    //       <WasteType data={result} />
-         
-    //     </div>
-    //   )}
-    // </div>
+    <>
     <div className="wastevideo">
       <Loader
         type="Watch"
@@ -151,7 +98,7 @@ function WasteVideo() {
       <div className="upper">
         <div className="capture m-20">
           {!imageData && <label
-            htmlFor="file-upload"
+            htmlFor="file-upload" 
             className="relative cursor-pointer flex justify-center items-center rounded-lg border-dashed border-gray-300 border-2 py-2 px-4 transition duration-300 ease-in-out hover:bg-gray-200 hover:border-gray-400"
           >
             <div className="flex flex-col items-center space-y-1">
@@ -168,7 +115,7 @@ function WasteVideo() {
           </label>
           }
           {
-          imageData && <><h2>Image Uploaded</h2><br/><img src={imageData} alt="Uploaded Pic" /></>
+          imageData && <><h2>Image Uploaded</h2><br/><img className="w-80 h-80 rounded-md" src={imageData} alt="Uploaded Pic" /></>
           }
 
           {loaded && (
@@ -180,7 +127,7 @@ function WasteVideo() {
         {/* hell */}
         <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
           {result.length > 0 && (
-            <div>
+            <div className="mt-20">
               <Chart data={result[0]} />
             </div>
           )}
@@ -192,7 +139,12 @@ function WasteVideo() {
           <WasteType data={result} />
         </div>
       )}
+
+      {/* REVIEW */}
+
     </div>
+      <NewWaste/>
+    </>
   );
 }
 

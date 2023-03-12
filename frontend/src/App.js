@@ -7,9 +7,7 @@ import Login from './components/login/Login';
 import Result from "./components/results/Result";
 import WasteVideo2 from "./components/wastevideo/WasteVideo2";
 import WasteVideo from './components/wastevideo/WasteVideo'
-
 function App() {
- 
   return (
     <div className="App">
       <Navbar/>

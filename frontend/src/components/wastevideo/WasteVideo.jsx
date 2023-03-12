@@ -37,9 +37,9 @@ function WasteVideo() {
         }
         setResult(results);
         console.log(results);
-        if (stopped) {
-          sendResultsToBackend(result);
-        }
+        // if (stopped) {
+        //   sendResultsToBackend(result);
+        // }
       });
     }
   }, 500);
@@ -50,21 +50,21 @@ function WasteVideo() {
     setStopped(!stopped);
   };
 
-  const sendResultsToBackend = (results) => {
-    const data = results.map((result) => {
-      const wasteType = results.label;
-      const accuracy = results.confidence;
-      return { wasteType, accuracy };
-    });
-    axios
-      .post("http://localhost:8000/api/prediction/", { predictions: data })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
+  // const sendResultsToBackend = (results) => {
+  //   const data = results.map((result) => {
+  //     const wasteType = results.label;
+  //     const accuracy = results.confidence;
+  //     return { wasteType, accuracy };
+  //   });
+  //   axios
+  //     .post("http://localhost:8000/api/prediction/", { predictions: data })
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // };
 
 
   const handleImageUpload = (e) => {
@@ -135,7 +135,6 @@ function WasteVideo() {
       {result.length > 0 && (
         <div className="results">
           <WasteType data={result} />
-         
         </div>
       )}
     </div>

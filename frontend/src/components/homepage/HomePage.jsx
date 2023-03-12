@@ -114,7 +114,7 @@ const HomePage = () => {
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Why waste?
+              Why EcoSavvy?
             </h1>
             <p className="mb-8 leading-relaxed">
               Our app can help you identify recyclable items and properly dispose of them, reducing waste and saving money. By doing so, you can make a positive impact on the environment and support the recycling industry, which is facing economic and diplomatic challenges.

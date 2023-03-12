@@ -9,6 +9,7 @@ import WasteVideo2 from "./components/wastevideo/WasteVideo2";
 import WasteVideo from './components/wastevideo/WasteVideo'
 import Landing from "./components/Landing";
 import './App.css'
+import PredictionList from "./components/predictions/PredictionList";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/video" element={<WasteVideo2/>}/>
           <Route path="/image" element={<WasteVideo/>}/>
           <Route path="/" element={<Landing/>}/>
+          <Route path="/predictionlist" element={<PredictionList/>}/>
         </Routes>
       <Footer/>
       </BrowserRouter>

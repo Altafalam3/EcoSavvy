@@ -42,7 +42,7 @@ const WasteType = (props) => {
                 }
                 alt={props.label}
               />
-              <p className="name">{props.label}<br />{((props.confidence) * 100).toFixed(3)}</p>
+              <p className="name">{props.label}<br />{((props.confidence) * 100).toFixed(3)}%</p>
             </span>
           </li>
         ))}

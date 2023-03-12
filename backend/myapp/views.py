@@ -5,6 +5,19 @@ from .models import User
 from .serializers import UserSerializer
 from .serializers import PredictionSerializer
 from .models import Prediction
+from rest_framework.views import APIView
+from rest_framework import authentication, permissions
+from rest_framework import generics
+
+class UserView(APIView):
+    authentication_classes = [authentication.SessionAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        if request.user.is_authenticated:
+            return Response({'username': request.user.username})
+        else:
+            return Response({'error': 'User not authenticated'})
 
 @api_view(['POST'])
 def user_signup(request):
@@ -34,3 +47,9 @@ def prediction_view(request):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class PredictionList(generics.ListAPIView):
+    queryset = Prediction.objects.all()
+    serializer_class = PredictionSerializer
+

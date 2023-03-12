@@ -21,9 +21,9 @@ const Navbar = () => {
             </Link>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center cursor-pointer ">
                <Link to="/home" className="mr-5 hover:text-gray-900 scroll-smooth">Home</Link>
-               <Link to="/about" className="mr-5 hover:text-gray-900">About Us</Link>
                <Link to="/video" className="mr-5 hover:text-gray-900">WebCam</Link>
                <Link to="/image" className="mr-5 hover:text-gray-900">ImageUpload</Link>
+               <Link to="/predictionlist" className="mr-5 hover:text-gray-900">Prediction List</Link>
                <Link to="/footer" className="mr-5 hover:text-gray-900">Contact</Link>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onClick={()=>setChange(!change)}>

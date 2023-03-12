@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import ImageOne from './photos/Bg11.jpg';
 import ImageTwo from './photos/li-hao-b25tsR8dBh0-unsplash.jpg';
 import ImageThree from './photos/jas-min-CIItgnBEOgw-unsplash.jpg';
+import NewWaste from "../wastevideo/NewWaste";
 
 const images = [ImageOne, ImageTwo, ImageThree];
 const HomePage = () => {
@@ -131,6 +132,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <NewWaste />
     </div>
   );
 };

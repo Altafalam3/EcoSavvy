@@ -16,7 +16,7 @@ const Footer = () => {
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
             <nav class="list-none mb-10">
               <li>
-                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Metal Waste</a>
+                <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Metal Waste</a>
               </li>
               <li>
                 <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Biomedical Waste</a>
@@ -50,19 +50,18 @@ const Footer = () => {
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Resources</h2>
             <nav class="list-none mb-10">
               <li>
-                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">News</a>
+                <a href="https://twitter.com/altaf0032" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Metal Waste</a>
               </li>
               <li>
-                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Knowledge Centre</a>
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Biomedical Waste</a>
               </li>
               <li>
-                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Gallery</a>
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Plastic Waste</a>
               </li>
               <li>
-                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Internet</a>
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-800">Radioactive waste</a>
               </li>
-            </nav>
-          </div>
+            </nav>          </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
             <nav class="list-none mb-10">

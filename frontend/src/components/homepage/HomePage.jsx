@@ -84,14 +84,7 @@ const HomePage = () => {
               ML-based Garbage Segregation
             </h1>
             <p className="mb-8 leading-relaxed">
-              The politics of waste in the present day is a mess. Objects
-              Americans intend to recycle tend to arrive at landfills and
-              recently, recycling has become more expensive than throwing those
-              objects away into the trash. In order to support the recycling
-              industry, six students from AI Camp worked together and developed
-              a detector for individuals to identify what type of waste
-              something is and whether it should be recycled or not.
-            </p>
+              The ML-based garbage segregation process using webcam and image upload involves capturing live images or uploading individual images of the waste material, followed by pre-processing and standardizing the images for training the supervised machine learning model. The trained model can then identify and segregate the waste materials based on their visual features, such as color, texture, and shape. The system provides feedback to the user, including a label or description of the waste material, to help them segregate their waste properly.            </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
                 <Link to="/video">Web Cam</Link>

@@ -8,13 +8,13 @@
 open terminal and type
 
 ```
-git clone https://github.com/Altafalam3/TODO-LIST.git
+git clone https://github.com/Altafalam3/1_The-Debuggers_Crescendo2023.git
 ```
 
 or you can download using the url below
 
 ```
-https://github.com/Altafalam3/TODO-LIST.git
+https://github.com/Altafalam3/https://github.com/Altafalam3/1_The-Debuggers_Crescendo2023.git
 ```
 ## Frontend ( React )
 
@@ -58,5 +58,5 @@ Server will be available at `http://127.0.0.1:8000` in your browser
 Don't Forget to whitelist your host origin using `django-cors-header` when using in production<br>
 [See Documentation](https://pypi.org/project/django-cors-headers/)
 
-By Team Debuggers
+By Team Debuggers <br>
 ========Thank You !!!=========

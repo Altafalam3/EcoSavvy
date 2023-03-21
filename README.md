@@ -8,13 +8,13 @@ It uses computer vision to enable efficient waste management and recycling pract
 open terminal and type
 
 ```
-git clone https://github.com/Altafalam3/1_The-Debuggers_Crescendo2023.git
+git clone https://github.com/Altafalam3/EcoSavvy.git
 ```
 
 or you can download using the url below
 
 ```
-https://github.com/Altafalam3/https://github.com/Altafalam3/1_The-Debuggers_Crescendo2023.git
+https://github.com/Altafalam3/EcoSavvy.git
 ```
 ## Frontend ( React )
 

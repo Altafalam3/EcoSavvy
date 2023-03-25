@@ -1,10 +1,14 @@
-import { PieChart, Pie, Legend, Tooltip } from 'recharts';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Chart } from "react-google-charts";
 
 function PredictionList() {
   const [predictions, setPredictions] = useState([]);
-  const [chartData, setChartData] = useState([]);
+  const [chartData, setChartData] = useState([['Category', 'Value']])
+
+  const options = {
+    title: "Predictions piechart",
+  };
 
   useEffect(() => {
     axios.get('http://localhost:8000/api/predictions/')
@@ -22,11 +26,11 @@ function PredictionList() {
           }
           return acc;
         }, {});
+        console.log(percentages);
         // Convert percentages object to array of objects for Recharts
-        const chartData = Object.keys(percentages).map(category => ({
-          value: percentages[category],
-          name: category,
-        }));
+        const chartData = Object.keys(percentages).map(category => {
+          return [category, percentages[category]];
+        });
         console.log(chartData);
         setChartData(chartData);
       })
@@ -45,11 +49,14 @@ function PredictionList() {
           </li>
         ))}
       </ul>
-      <PieChart width={400} height={400}>
-        <Pie data={chartData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} fill="#8884d8" label />
-        <Tooltip />
-        <Legend />
-      </PieChart>
+      <Chart
+        chartType="PieChart"
+        data={chartData}
+        options={options}
+        width={"100%"}
+        height={"400px"}
+      />
+
     </div>
   );
 }

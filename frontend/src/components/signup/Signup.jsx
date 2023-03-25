@@ -10,15 +10,17 @@ const Signup = () => {
    const [password, setPassword] = useState("");
    const navigate = useNavigate();
 
-   const handleSubmit =async (event) => {
+   const handleSubmit = async (event) => {
       event.preventDefault();
-      await axios.post('http://localhost:8000/api/signup/', {
-         name: name,
-         email: email,
-         password: password
-      })
+      await axios
+         .post('http://localhost:8000/api/signup/', {
+            name: name,
+            email: email,
+            password: password
+         })
          .then((response) => {
             console.log(response.data);
+            navigate("/home");
          })
          .catch((error) => {
             console.log(error);
@@ -59,7 +61,7 @@ const Signup = () => {
                      id="email"
                      value={email}
                      onChange={(event) => setEmail(event.target.value)}
-                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"  required
+                     className="block w-full px-4 py-2 mt-2 text-green-700 bg-white border rounded-md focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40" required
                   />
                </div>
                <div className="mb-2">
@@ -79,7 +81,7 @@ const Signup = () => {
                </div>
                <div className="mt-6">
                   <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-green-700 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 text-xl">
-                    <Link to="/home">Login</Link> 
+                     Sign up
                   </button>
                </div>
             </form>

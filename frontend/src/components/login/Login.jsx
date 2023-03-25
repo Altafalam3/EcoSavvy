@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./login.css";
 import axios from "axios";
-// import { navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Login = () => {
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
+   const navigate = useNavigate();
 
    const handleEmailChange = (event) => {
       setEmail(event.target.value);
@@ -25,7 +26,7 @@ const Login = () => {
          })
          .then((response) => {
             console.log(response.data);
-            // navigate("/");
+            navigate("/home");
          })
          .catch((error) => {
             console.log(error);
@@ -76,7 +77,7 @@ const Login = () => {
                      onClick={handleSubmit}
                      className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 text-xl transform bg-green-500 rounded-md hover:bg-green-400 focus:outline-none focus:bg-green-600"
                   >
-                     <Link to="/home">Login</Link>
+                     Login
                   </button>
                </div>
             </form>

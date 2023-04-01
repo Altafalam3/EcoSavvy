@@ -10,7 +10,6 @@ import { FaUpload } from "react-icons/fa";
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./wastevideo.css";
-import NewWaste from "./NewWaste";
 
 let classifier;
 // image upload wala
@@ -132,7 +131,6 @@ function WasteVideo() {
               </div>
             )}
           </div>
-          {/* heello */}
         </div>
         {result.length > 0 && (
           <div className="results">
@@ -140,10 +138,7 @@ function WasteVideo() {
           </div>
         )}
 
-        {/* REVIEW */}
-
       </div>
-      {/* <NewWaste/> */}
     </>
   );
 }

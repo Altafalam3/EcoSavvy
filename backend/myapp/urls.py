@@ -6,7 +6,6 @@ from .views import PredictionList
 urlpatterns = [
     path('signup/', user_signup),
     path('login/', user_login),
-    # path('results/', ResultsListCreate.as_view(), name='results-list'),
     path('prediction/', prediction_view),
     path('predictions/', PredictionList.as_view(), name='prediction-list'),
 

@@ -5,8 +5,12 @@ Ecosavvy is a waste segregator based on ML model built using CNN and trained ove
 It uses computer vision to enable efficient waste management and recycling practices.
 
 ## Demo
-[![Demo Video](./assets/Demo.gif)](./assets/Demo.mp4)
-
+<div style="position:relative;width:fit-content;height:fit-content;">
+            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/9WQo81Wj3Id?utm_source=embed&utm_medium=embed&utm_campaign=watch">
+                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
+            </a>
+            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/9WQo81Wj3Id/embed" width="640" height="360"></iframe>
+        </div>
 
 ## Installation (Clone)
 

@@ -1,4 +1,3 @@
-import './navbar.css'
 import Leaf from './leaf.png'
 import { Link } from 'react-router-dom'
 // import axios from 'axios'

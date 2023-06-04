@@ -2,11 +2,13 @@ import React from "react";
 import dustbin from "./dustbin.png";
 import truck from "./Truck.png";
 import video1 from "./wastvideo.mp4";
+
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { useEffect } from "react";
 import './homepage.css'
+
 import { Link } from 'react-router-dom'
 import ImageOne from './photos/Bg11.jpg';
 import ImageTwo from './photos/li-hao-b25tsR8dBh0-unsplash.jpg';
@@ -24,7 +26,6 @@ const HomePage = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, [currentImage]);
-
 
 
   const [text, setText] = useState('');

@@ -5,7 +5,7 @@ Ecosavvy is a waste segregator based on ML model built using CNN and trained ove
 It uses computer vision to enable efficient waste management and recycling practices.
 
 ## Demo
-
+Project Demo is in the assets folder Demo.mp4 file.
 
 
 ## Installation (Clone)

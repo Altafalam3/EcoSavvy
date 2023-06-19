@@ -7,6 +7,7 @@ It uses computer vision to enable efficient waste management and recycling pract
 ## Demo
 Project Demo is in the assets folder Demo.mp4 file.
 
+ https://github.com/Altafalam3/EcoSavvy/blob/main/assets/Demo.mp4
 
 ## Installation (Clone)
 
